@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLAY IS FOOTBALL | PRO</title>
+    <style>
+        body { background: #000; color: #fff; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 15px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        .page { display: none; }
+        .page.active { display: block; }
+        
+        /* СТИЛЬ ЛОГО И НЕОНА */
+        .main-logo { text-align: center; margin-bottom: 20px; }
+        .main-logo img { height: 100px; filter: drop-shadow(0 0 15px #00d2ff); }
+        .neon-box { margin-bottom: 30px; padding: 25px; border: 2px solid #00d2ff; border-radius: 20px; box-shadow: 0 0 20px #00d2ff; text-align: center; }
+        .main-slogan { font-size: 28px; font-weight: 900; text-transform: uppercase; text-shadow: 0 0 10px #00d2ff; }
+        .quote-box { margin-top: 15px; color: #ff00ff; font-weight: 800; font-size: 14px; text-transform: uppercase; }
+
+        /* КАРТОЧКИ КЛУБОВ */
+        .club-card { background: #080808; border-radius: 20px; padding: 20px; margin-bottom: 25px; border: 2px solid; text-align: center; box-shadow: 0 0 15px rgba(255,255,255,0.1); }
+        .logo-img { height: 80px; margin-bottom: 15px; display: block; margin-left: auto; margin-right: auto; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); }
+        .desc-text { font-size: 14px; color: #bbb; margin-bottom: 15px; line-height: 1.6; text-align: center; }
+        
+        /* КНОПКИ И ТРЕНИРОВКИ */
+        .btn { display: block; width: 100%; padding: 15px; border-radius: 12px; font-weight: bold; border: 2px solid; text-align: center; cursor: pointer; margin-bottom: 10px; color: #fff; text-transform: uppercase; transition: 0.3s; text-decoration: none; }
+        .btn:hover { background: #222; }
+        .page-title { font-size: 22px; font-weight: 900; padding-bottom: 10px; border-bottom: 2px solid; margin-bottom: 20px; text-transform: uppercase; }
+        .day-label { font-size: 16px; font-weight: 900; margin-top: 15px; color: #00d2ff; }
+        .day-info { font-size: 14px; color: #ccc; margin-bottom: 5px; border-bottom: 1px solid #222; padding-bottom: 5px; }
+        .btn-back { margin-top: 30px; padding: 15px; background: #333; border-radius: 12px; text-align: center; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <div id="main" class="page active">
+        <div class="main-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Football_ball.svg" alt="Ball"></div>
+        <div class="neon-box">
+            <div class="main-slogan">PLAY IS FOOTBALL</div>
+            <div class="quote-box">«...Мы идем сюда, чтобы доминировать» — Луис Энрике</div>
+        </div>
+
+        <h3 style="text-align:center;">ТОП КЛУБЫ</h3>
+        <!-- Клубные карточки -->
+        <div class="club-card" style="border-color:#00d2ff;"><img class="logo-img" src="https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg"><h3>MAN CITY</h3><div class="desc-text">Тактический эталон. Система Гвардиолы: тотальный контроль и прессинг.</div><a href="https://www.tiktok.com/@mancity" class="btn" style="border-color:#00d2ff;">TIKTOK</a></div>
+        <div class="club-card" style="border-color:#ff0055;"><img class="logo-img" src="https://upload.wikimedia.org/wikipedia/en/a/a7/Paris_Saint-Germain_F.C..svg"><h3>PSG</h3><div class="desc-text">Парижское величие и атакующая мощь. Каждое касание — это шоу.</div><a href="https://www.tiktok.com/@psg" class="btn" style="border-color:#ff0055;">TIKTOK</a></div>
+        <div class="club-card" style="border-color:#a50044;"><img class="logo-img" src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg"><h3>BARCELONA</h3><div class="desc-text">Философия Ла Масии. Тики-така и воспитание великих талантов.</div><a href="https://www.tiktok.com/@fcbarcelona" class="btn" style="border-color:#a50044;">TIKTOK</a></div>
+        <div class="club-card" style="border-color:#fff;"><img class="logo-img" src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg"><h3>REAL MADRID</h3><div class="desc-text">Королевский клуб. Невероятная воля к победе и лучшие камбэки в истории.</div><a href="https://www.tiktok.com/@realmadrid" class="btn" style="border-color:#fff;">TIKTOK</a></div>
+        <div class="club-card" style="border-color:#da0812;"><img class="logo-img" src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg"><h3>MAN UNITED</h3><div class="desc-text">Красные дьяволы. Дух Олд Траффорд и борьба до финального свистка.</div><a href="https://www.tiktok.com/@manutd" class="btn" style="border-color:#da0812;">TIKTOK</a></div>
+        <div class="club-card" style="border-color:#ef4444;"><img class="logo-img" src="https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg"><h3>ARSENAL</h3><div class="desc-text">Молодая энергия Артеты. Скорость, интеллект и умный футбол.</div><a href="https://www.tiktok.com/@arsenal" class="btn" style="border-color:#ef4444;">TIKTOK</a></div>
+        <div class="club-card" style="border-color:#ff0000;"><img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Logo_of_AC_Milan.svg"><h3>AC MILAN</h3><div class="desc-text">Легенды Сан-Сиро. Наследие чемпионов и итальянская тактика.</div><a href="https://www.tiktok.com/@acmilan" class="btn" style="border-color:#ff0000;">TIKTOK</a></div>
+        
+        <h3 style="text-align:center;">ТРЕНИРОВКИ</h3>
+        <div class="btn" style="border-color:#00ff66;color:#00ff66;" onclick="showPage('vrata')">ВРАТАРИ (NEUER)</div>
+        <div class="btn" style="border-color:#ff9900;color:#ff9900;" onclick="showPage('zashita')">ЗАЩИТА (VAN DIJK)</div>
+        <div class="btn" style="border-color:#00f2fe;color:#00f2fe;" onclick="showPage('mid')">ПОЛУЗАЩИТА (KDB)</div>
+        <div class="btn" style="border-color:#ff00ff;color:#ff00ff;" onclick="showPage('ekitike')">АТАКА (EKITIKE)</div>
+        <div class="btn" style="border-color:#e11d48;color:#e11d48;" onclick="showPage('olise')">СМЕЩЕНИЯ (OLISE)</div>
+    </div>
+
+    <!-- СТРАНИЦЫ ТРЕНИРОВОК -->
+    <div id="vrata" class="page"><h2 class="page-title" style="color:#00ff66;">▲ ВРАТАРИ</h2>
+        <div class="day-label">ПН: РЕАКЦИЯ</div><div class="day-info">Теннисные мячи у стены (60с x 4).</div>
+        <div class="day-label">ВТ: ПРЫЖКИ</div><div class="day-info">Барьеры (5 подходов по 10 раз).</div>
+        <div class="day-label">СР: ВЫХОДЫ</div><div class="day-info">Прием в борьбе (20 выходов).</div>
+        <div class="day-label">ЧТ: ПАС</div><div class="day-info">Точный пас 30м (30 раз).</div>
+        <div class="day-label">ПТ: СЕЙВЫ</div><div class="day-info">Работа по углам (40 ударов).</div>
+        <div class="day-label">СБ: КООРДИНАЦИЯ</div><div class="day-info">Лестница (30 мин).</div>
+        <div class="day-label">ВС: ОТДЫХ</div><div class="day-info">Восстановление.</div>
+        <div class="btn-back" onclick="showPage('main')">ВЕРНУТЬСЯ</div>
+    </div>
+
+    <div id="zashita" class="page"><h2 class="page-title" style="color:#ff9900;">▲ ЗАЩИТА</h2>
+        <div class="day-label">ПН: 1Х1</div><div class="day-info">Техника отбора (30 раз).</div>
+        <div class="day-label">ВТ: ПОЗИЦИЯ</div><div class="day-info">Чтение игры (20 мин).</div>
+        <div class="day-label">СР: ВЕРХ</div><div class="day-info">Прыжки с сопротивлением (20 дуэлей).</div>
+        <div class="day-label">ЧТ: ПЕРЕХВАТЫ</div><div class="day-info">Игра на опережение (25 мин).</div>
+        <div class="day-label">ПТ: СКОРОСТЬ</div><div class="day-info">Спринты 30м (10 раз).</div>
+        <div class="day-label">СБ: СИЛА</div><div class="day-info">Кор и спина (40 мин).</div>
+        <div class="day-label">ВС: ОТДЫХ</div><div class="day-info">Восстановление.</div>
+        <div class="btn-back" onclick="showPage('main')">ВЕРНУТЬСЯ</div>
+    </div>
+
+    <div id="mid" class="page"><h2 class="page-title" style="color:#00f2fe;">▲ ПОЛУЗАЩИТА</h2>
+        <div class="day-label">ПН: ОБЗОР</div><div class="day-info">Сканирование 360° (30 раз).</div>
+        <div class="day-label">ВТ: ПАС</div><div class="day-info">Длинный пас 40м (50 раз).</div>
+        <div class="day-label">СР: ПРЕССИНГ</div><div class="day-info">Выход из-под давления (25 мин).</div>
+        <div class="day-label">ЧТ: УДАРЫ</div><div class="day-info">Дальние удары (40 раз).</div>
+        <div class="day-label">ПТ: ПРИЕМ</div><div class="day-info">Прием + разворот (30 раз).</div>
+        <div class="day-label">СБ: ДИАГОНАЛИ</div><div class="day-info">Переводы флангов (20 раз).</div>
+        <div class="day-label">ВС: ОТДЫХ</div><div class="day-info">Восстановление.</div>
+        <div class="btn-back" onclick="showPage('main')">ВЕРНУТЬСЯ</div>
+    </div>
+
+    <div id="ekitike" class="page"><h2 class="page-title" style="color:#ff00ff;">▲ АТАКА</h2>
+        <div class="day-label">ПН: РЕЗКОСТЬ</div><div class="day-info">Спринты 15м (20 раз).</div>
+        <div class="day-label">ВТ: 1Х1</div><div class="day-info">Дриблинг в узкой зоне.</div>
+        <div class="day-label">СР: ЗАВЕРШЕНИЕ</div><div class="day-info">Удар в касание.</div>
+        <div class="day-label">ЧТ: РЫВКИ</div><div class="day-info">Забегания за спину.</div>
+        <div class="day-label">ПТ: ФИНИШ</div><div class="day-info">Точные удары в углы.</div>
+        <div class="day-label">СБ: КООРДИНАЦИЯ</div><div class="day-info">Смена направлений.</div>
+        <div class="day-label">ВС: ОТДЫХ</div><div class="day-info">Восстановление.</div>
+        <div class="btn-back" onclick="showPage('main')">ВЕРНУТЬСЯ</div>
+    </div>
+
+    <div id="olise" class="page"><h2 class="page-title" style="color:#e11d48;">▲ СМЕЩЕНИЯ</h2>
+        <div class="day-label">ПН: КРОССЫ</div><div class="day-info">Навесы на точность (30 раз).</div>
+        <div class="day-label">ВТ: СМЕЩЕНИЯ</div><div class="day-info">Резкий уход в центр.</div>
+        <div class="day-label">СР: ТЕХНИКА</div><div class="day-info">Контроль мяча (движение).</div>
+        <div class="day-label">ЧТ: ФИНТЫ</div><div class="day-info">Раскачивание соперника.</div>
+        <div class="day-label">ПТ: УДАРЫ</div><div class="day-info">Удары с дистанции.</div>
+        <div class="day-label">СБ: СТАНДАРТЫ</div><div class="day-info">Угловые и штрафные.</div>
+        <div class="day-label">ВС: ОТДЫХ</div><div class="day-info">Восстановление.</div>
+        <div class="btn-back" onclick="showPage('main')">ВЕРНУТЬСЯ</div>
+    </div>
+</div>
+
+<script>
+    function showPage(id) {
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+        window.scrollTo(0, 0);
+    }
+</script>
+</body>
+</html>
